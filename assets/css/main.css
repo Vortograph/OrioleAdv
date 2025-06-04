@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --main-1: #FFFFFF;
+  --main-2: #FAC43C;
+  --main-3: #000000;
+  --main-4: #FAF3E5;
+
+}
+
+:root {
+  --font-sans: "Inter", sans-serif;
+}
+
+
+.line {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#FAC43C;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@layer components {
+    @layer components {
+        .button1 {
+            font-size: 16px;
+            background-color: #FAC43C;
+            box-shadow: inset 0 0 0 3px #FAC43C;
+            color: black;
+            padding: 12px 15px;
+            border-radius: 100px;
+            transition: background-color 0.3s ease-out, color 0.3s ease-out;
+          }
+          
+          .button1:hover {
+            background-color: transparent;
+            color: #FAC43C;
+          }
+
+
+          .button2 {
+            font-size: 16px;
+            background-color: black;
+            box-shadow: inset 0 0 0 3px black;
+            color: #FAC43C;
+            padding: 12px 25px;
+            border-radius: 100px;
+            transition: background-color 0.3s ease-out, color 0.3s ease-out;
+          }
+          
+          .button2:hover {
+            background-color: transparent;
+            color: black;
+          }
+
+
+
+
+    }          
+  
+}
+
+
+
+

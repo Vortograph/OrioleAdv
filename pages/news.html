@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>News</title>
+</head>
+<header>
+    <div class="h-[80px] bg-[var(--main-3)] flex justify-between items-center px-[20px] md:px-[50px] text-[16px]">
+        <div class="flex items-center">
+            <img src="/assets/img/Oriole Advocates logo.-web.jpg" alt="Logo" class="h-12 w-12 mr-2 rounded-full">
+            <h1 class="md:text-2xl font-bold text-white">Avon Oriole Advocates</h1>
+        </div>
+        <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Button & Dropdown -->
+            <div class="relative md:hidden">
+                <button id="menu-icon" class="w-[58px] h-[58px] rounded-full bg-[var(--main-2)] flex justify-center items-center focus:outline-none">
+                    <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 20px;">
+                        <line x1="1.5" y1="2" x2="13.5" y2="2" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+                        <line x1="1.5" y1="12" x2="28.5" y2="12" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+                        <line x1="16.5" y1="22" x2="28.5" y2="22" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50 hidden">
+                    <a href="index.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">Home</a>
+                    <a href="faq.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">FAQ</a>
+                    <a href="news.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">News</a>
+                    <a href="contacts.html" class="block px-4 py-2 text-[var(--main-3)] font-bold underline">Contact Us</a>
+                </div>
+            </div>
+            <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuIcon = document.getElementById('menu-icon');
+                const mobileMenu = document.getElementById('mobile-menu');
+                menuIcon.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function (e) {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+                mobileMenu.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            });
+            </script>
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex gap-[30px] items-center mr-4 px-[50px] ">
+            <a href="index.html" class="text-white mx-2 hover:underline"><strong>Home</strong></a>
+            <a href="faq.html" class="text-white hover:underline mx-2"><strong>FAQ</strong></a>
+            <a href="news.html" class="text-white underline mx-2"><strong>News</strong></a>
+            <div class="button1">
+            <a href="contacts.html" class="mx-2"><strong>Contact Us</strong></a>
+            </div>
+        </nav>
+
+    </div>
+    </header>
+<body>
+    <h1 class="text-center text-2xl md:text-5xl font-bold my-10">News</h1>
+    <div class="mx-[20px] md:mx-[100px] flex justify-center text-center text-[var(--main-2)] text-2xl bg-[var(--main-3)] py-[10px]"><strong>Recent Calls to Actions during the 2025 Biennium Budget Session:</strong></div>
+    <ul class="px-[20px] md:px-[100px] text-1rem">
+        <li class="mb-4 border-[var(--main-3)] py-[50px] gap-[10px] flex flex-col">
+            <div class="flex justify-center text-center text-centertext-[24px] bg-[var(--main-2)] px-[50px] py-[10px] w-fit"><strong>SB287</strong></div>
+            <ul class="list-disc pl-8 space-y-[20px] text-left">
+                <li>
+                    A possible amendment to the bill will be to provide an “opt out” provision to allow county councils to exempt its school corporations from conducting partisan school board elections.
+                </li>
+                <li>
+                    One local governing body (county councils) should not be granted this broad authority over potentially multiple other governing bodies of school corporations.
+                </li>
+                <li>
+                    Voters are empowered to elect school board officials to exercise statutory authority and carry out explicit duties to oversee the governance of school corporations. School Board members work to identify and support the vision and values of their school community.
+                </li>
+                <li>
+                    A county council serves a broader constituency with different powers, duties, and responsibilities. This begs the question, what criteria would a county council use to decide whether to exempt, or not, the school corporations within its boundaries from holding partisan school board elections? It seems councils would be susceptible to political considerations over “good governance” considerations of the school corporation.
+                </li>
+                <li>
+                    This process could vary greatly from community to community, with arbitrary standards for decision making. This process will also lead to voter confusion.
+                </li>
+                <li>
+                    Please call your Rep. Steuerwald and Senator Clark to ask that they oppose this measure (and continue to advocate to keep School Board elections non-partisan)
+                </li>
+                <li>
+                    Remember that Senator Clark voted to support SB287 making school board elections partisan. When calling his office, it would be good to emphasize again some of the following talking points against partisan school board elections:
+                    <ul class="list-disc pl-8 space-y-[20px] mt-2">
+                        <li>
+                            Mandating partisan elections for school boards significantly reduces the pool of qualified candidates willing to serve their communities. For many, running for a school board position represents their first step into public service. However, the requirement to affiliate with a political party may deter these first-time candidates, as they may feel unprepared or unwilling to navigate the political connections and partisanship required to run under such a system.
+                        </li>
+                        <li>
+                            Mandating partisan election of school boards disqualifies many people who are currently serving their community from doing so in the future. The Hatch Act prohibits civilian employees of the federal government, as well as state and local government employees whose salaries are paid entirely with federal funds from running for partisan office.
+                        </li>
+                        <li>
+                            Preserve local focus on students and prioritizing community needs.
+                        </li>
+                        <li>
+                            Keep party politics outside the boardroom doors and don’t invite political patronage influences in hiring the superintendent and other administrators.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Representative Steuerwald voted against SB287 when it came to the House. So when calling his office, THANK HIM for that vote (going against his party) and let him know you oppose this amendment as well.
+                </li>
+            </ul>
+        </li>
+        <li class="mb-4 border-[var(--main-3)] py-[50px] gap-[10px] flex flex-col">
+            <div class="flex justify-center text-center text-centertext-[24px] bg-[var(--main-2)] px-[50px] py-[10px] w-fit"><strong>SB1</strong></div>
+            <ul class="list-disc pl-8 space-y-[20px] text-left">
+                <li>
+                    IN already has some of the lowest property taxes in the country  
+              </li>
+                <li>
+                    Appreciate changes reducing impact to local governments’ property tax funds (buildings, operations, transportation, etc.)
+                </li>
+                <li>
+                    Appreciate the effort to simplify referendum language – more clear to taxpayers
+                </li>
+                <li>
+                    Allow local control for school boards (elected officials closest to their constituents) to determine timeline for referendum. November does NOT work for Operating Referendum given legal requirements to reduce teaching positions.
+                </li>
+                <li>
+                    Sharing property tax revenue with Charter Schools is inappropriate. Charter Schools officials are not elected and local taxes (referendum) will be increased to cover costs to Charter Schools.
+                </li>
+                <li>
+                    Restore $2.2 million in LIT funding to ACSC
+                </li>
+                <li>
+                    Allow school districts to issue General Obligation Bonds annually – for districts hit by property tax caps, this is only mechanism we have to off-set tax cap loss (routine building maintenance/repair, purchase of buses, technology)
+                </li>
+                <li>
+                    Growing schools are being asked to do the impossible – serve more kids, keep kids safe, reduce your tax rate to $0.70, meet ever-changing requirements in tax rate laws, do "more with less", operate "like a business" when the state changes the rules every single year
+                </li>
+            </ul>
+        </li>
+         <li class="mb-4 border-[var(--main-3)] py-[50px] gap-[10px] flex flex-col">
+            <div class="flex justify-center text-center text-centertext-[24px] bg-[var(--main-2)] px-[50px] py-[10px] w-fit"><strong>HB1001 Budget</strong></div>
+            <ul class="list-disc pl-8 space-y-[20px] text-left">
+                <li>
+                    From FY2025 to FY 2027, estimated increase in Basic Tuition Support
+              </li>
+                <li>
+                    $191M to Choice Scholarship (44% of increase in basic tuition support)
+                </li>
+                <li>
+                    $210.5M to Traditional Public Schools (49% of increase in basic tuition support)
+                </li>
+                <li>
+                    87% of students/families choose Traditional Public Schools – yet only receive 49% of new tuition support funding. 44% of new funding goes to Choice Scholarship Program
+                </li>
+                <li>
+                    Fund to inflation (about 3%) – anything less will require reductions
+                </li>
+                <li>
+                    Increase funds for special education and multi-lingual education
+                </li>
+                <li>
+                    Fully fund textbooks/curricular materials (-$483,000 for ACSC) as a separate line in the funding formula for transparency                </li>
+
+                <li>
+                    No increase in voucher funding without same accountability as public schools
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<footer class="footer bg-black">
+  <div class="flex items-center justify-center">
+  </div>
+
+  <div class="row">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contacts.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    © 2025 Avon Oriole Advocates - All rights reserved || Designed By:
+    <a href="#" class="underline text-[var(--main-2)]">Gabriel Richter</a> | Avon Highschool
+  </div>
+</footer>
+</html>

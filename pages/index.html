@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[var(--main-4)] font-['Inter'] wrap-break-word">
+
+    <!-- Header -->
+    <header>
+        <div class="h-[80px] bg-[var(--main-3)] flex justify-between items-center px-[20px] md:px-[50px] text-[16px]">
+            <div class="flex items-center">
+                <img src="/assets/img/Oriole Advocates logo.-web.jpg" alt="Logo" class="h-12 w-12 mr-2 rounded-full">
+                <h1 class="md:text-2xl font-bold text-white">Avon Oriole Advocates</h1>
+            </div>
+            <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Button & Dropdown -->
+            <div class="relative md:hidden">
+                <button id="menu-icon" class="w-[58px] h-[58px] rounded-full bg-[var(--main-2)] flex justify-center items-center focus:outline-none overflow-hidden relative">
+                    <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 20px;">
+                        <line x1="1.5" y1="2" x2="13.5" y2="2" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+                        <line x1="1.5" y1="12" x2="28.5" y2="12" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+                        <line x1="16.5" y1="22" x2="28.5" y2="22" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50 hidden">
+                    <a href="index.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">Home</a>
+                    <a href="faq.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">FAQ</a>
+                    <a href="news.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">News</a>
+                    <a href="contacts.html" class="block px-4 py-2 text-[var(--main-3)] font-bold underline">Contact Us</a>
+                </div>
+            </div>
+            <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuIcon = document.getElementById('menu-icon');
+                const mobileMenu = document.getElementById('mobile-menu');
+                menuIcon.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle('hidden');
+                });
+                document.addEventListener('click', function (e) {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+                mobileMenu.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            });
+            </script>
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-[30px] items-center mr-4 px-[50px]">
+                <a class="text-white mx-2 underline"><strong>Home</strong></a>
+                <a href="faq.html" class="text-white hover:underline mx-2"><strong>FAQ</strong></a>
+                <a href="news.html" class="text-white hover:underline mx-2"><strong>News</strong></a>
+                <div class="button1">
+                    <a href="contacts.html" class="mx-2"><strong>Contact Us</strong></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="-space-y-[250px] relative flex flex-col justify-center items-center overflow-hidden">
+        <img src="/assets/img/AVon Oriole Advoctes 2025.png" alt="Logo" class="h-full min-h-[500px] w-auto object-cover md:w-full md:h-full">
+        <ul class="relative z-20 lg:text-[57px] text-[36px] flex flex-col justify-center px-[20px] items-center text-center">
+            <div class="w-fit h-fit bg-[var(--main-4)] rounded-t-[20px] md:px-[50px] font-bold">
+                We are Avon.<br class="lg:hidden"> We are ONE! <br> For Avon STRONG schools!
+            </div>
+            <div class="w-fit h-fit bg-[var(--main-2)] flex rounded-b-[20px] sm:rounded-[20px] max-w-[1020px] px-[20px] lg:px-[50px] justify-center items-center font-bold lg:text-left relative flex-col py-[20px]">
+                We are UNITED against efforts to divide our commUNITY
+                <div class="button2 w-fit lg:absolute lg:left-[700px] lg:bottom-[30px] text-1rem md:text-[24px] h-fit whitespace-nowrap">
+                    <a href="faq.html" class="mx-2">Learn More</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="py-[100px] flex flex-col gap-[100px]">
+        <!-- Educate, Communicate, Advocate -->
+        <div class="px-[20px] md:px-[110px] py-[10px]">
+            <ul class="flex flex-col md:flex-row gap-[50px] items-start text-center">
+                <div class="flex flex-col gap-[10px] justify-center items-center">
+                    <img src="/assets/img/Educate.png" alt="Educate" class="h-[150px] w-[150px] rounded-full">
+                    <div class="font-bold">Educate</div>
+                    <div>
+                        The Oriole Advocates believe that when our community is knowledgeable about the operations of Avon public schools, they are better aware of the challenges and legislative burdens placed...
+                    </div>
+                    <div class="button1 text-[var(--main-3)] font-bold"><a href="faq.html">Read More</a></div>
+                </div>
+                <div class="flex flex-col gap-[10px] justify-center items-center">
+                    <img src="/assets/img/Communicate.png" alt="Communicate" class="h-[150px] w-[150px] rounded-full">
+                    <div class="font-bold">Communicate</div>
+                    <div>
+                        The Oriole Advocates strive to produce accurate, verifiable communications in an open manner to both actively highlight successes and to realistically portray the challenges that face ACSC...
+                    </div>
+                    <div class="button1 text-[var(--main-3)] font-bold"><a href="faq.html">Read More</a></div>
+                </div>
+                <div class="flex flex-col gap-[10px] justify-center items-center">
+                    <img src="/assets/img/Advocate.png" alt="Advocate" class="h-[150px] w-[150px] rounded-full">
+                    <div class="font-bold">Advocate</div>
+                    <div>
+                        When the need arises the Oriole Advocates reach out to rally as many of their community members for calls-to-action to oppose or support legislative actions. Oriole Advocates (either directly or via groups...
+                    </div>
+                    <div class="button1 text-[var(--main-3)] font-bold"><a href="faq.html">Read More</a></div>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Who are the Oriole Advocates? -->
+        <div class="bg-[var(--main-2)] flex flex-col items-center px-5 md:px-[100px] py-[60px] border-y-[5px] border-black text-black text-center">
+            <div class="font-extrabold text-3xl md:text-5xl mb-6 leading-tight">Who are the Oriole Advocates?</div>
+            <p class="text-lg md:text-xl leading-relaxed opacity-90 mb-10">
+                The Oriole Advocates are residents, business owners, and other concerned citizens who believe that strong public schools are critical to the area’s growth and success. We aim to build an aligned vision among the commUNITY that makes us <span class="font-bold">AVON STRONG</span>. To this end:
+            </p>
+            <div class="flex flex-col md:flex-row gap-[10px] text-left w-full justify-center items-stretch">
+                <div class="bg-white p-4 rounded-[10px] shadow-md flex-1">
+                    We abstain from and do not support purposely divisive statements or language intended to disparage those with differing views.
+                </div>
+                <div class="bg-white p-4 rounded-[10px] shadow-md flex-1">
+                    We engage in helpful, respectful communication that supports ACSC’s students, staff, and administrators — bolstering their efforts to remain a leading education institution in Indiana.
+                </div>
+                <div class="bg-white p-4 rounded-[10px] shadow-md flex-1">
+                    We seek common ground to help bind the schools and the community together more tightly.
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Affecting Avon Public Schools -->
+        <h1 class="text-[57px] text-center font-bold">Events Affecting Avon Public Schools</h1>
+        <div class="flex flex-col md:flex-row gap-[20px] px-[20px] md:px-[100px] h-full items-center justify-center">
+            <!-- Contact Legislators -->
+            <div class="h-full w-full">
+                <ul class="flex flex-col gap-[30px]">
+                    <img src="/assets/img/Oriole with bullhorn copy.png" alt="Horn" class="h-full w-full">
+                    <div class="border-[5px] border-[var(--main-2)] md:flex justify-between w-full rounded-[20px] overflow-clip hidden">
+                        <img src="/assets/img/Senator clark.jpg" alt="Brett Clark" class="max-w-[150px] object-cover">
+                        <div class="flex flex-col px-[15px] py-[10px] text-center text-1rem md:text-[24px]">
+                            <div class="font-bold">Call Senator Brett Clark</div>
+                            <div class="text-[var(--main-3)]">Senate District 24</div>
+                            <div class="text-[var(--main-3)] font-bold whitespace-nowrap">317-232-9490</div>
+                            <div class="text-[var(--main-3)]">or</div>
+                            <div class="text-[var(--main-3)] font-bold whitespace-nowrap">800-382-9467</div>
+                        </div>
+                    </div>
+                    <div class="border-[var(--main-2)] border-[5px] md:flex justify-between w-full rounded-[20px] overflow-clip hidden">
+                        <div class="flex flex-col px-[15px] py-[10px] text-center text-1rem md:text-[24px] text-[var(--main-2)] bg-[var(--main-3)]">
+                            <div class="font-bold">Call Representative Greg Steuerwald</div>
+                            <div>(House District 40)</div>
+                            <div class="font-bold whitespace-nowrap">800-382-9841</div>
+                            <div>or</div>
+                            <div class="font-bold whitespace-nowrap">317-234-3827</div>
+                        </div>
+                        <img src="/assets/img/legislator_gregory_steuerwald.jpg" alt="Greg Steuerwald" class="max-w-[150px] object-cover">
+                    </div>
+                </ul>
+            </div>
+            <!-- Calls To Action -->
+            <div class="h-full w-full flex flex-col">
+                <ul class="flex flex-col gap-[30px] h-full flex-1">
+                    <div class="relative h-[240px] w-full rounded-[20px] overflow-clip border-[var(--main-2)] border-[5px]">
+                        <img src="/assets/img/Indiana State House.png" alt="State House" class="h-full w-full object-cover" />
+                        <div class="absolute inset-0 bg-black bg-opacity-50 text-white text-[30px] font-black text-center flex items-center justify-center">Calls To Action</div>
+                    </div>
+                    <div class="border-[var(--main-2)] border-[5px] w-full font-bold rounded-[20px] px-[15px] py-[10px] flex-1 text-1rem md:text-[24px]">
+                        The 2025 Biennium Budget Session has recently concluded, and we don’t have any current Calls-to-Action.<br><br>
+                        For a history of past Calls-to-Action, please visit the News page.<br><br>
+                        If you feel that you have an issue that is impacting public education and the Avon Schools, then please feel free to <a href="contacts.html" class="underline">reach out to us</a> or reach out directly to your legislators.<br><br>
+                        Their contact information is on the left. They want to hear from their constituents.
+                    </div>
+                    <div class="border-[var(--main-2)] border-[5px] flex justify-between w-full rounded-[20px] overflow-clip md:hidden">
+                        <img src="/assets/img/Senator clark.jpg" alt="Brett Clark" class="max-w-[150px] object-cover">
+                        <div class="flex flex-col px-[15px] py-[10px] text-center items-center justify-center text-1rem md:text-[24px]">
+                            <div class="font-bold">Call Senator Brett Clark</div>
+                            <div class="text-[var(--main-3)]">Senate District 24</div>
+                            <div class="text-[var(--main-3)] font-bold">317-232-9490</div>
+                            <div class="text-[var(--main-3)]">or</div>
+                            <div class="text-[var(--main-3)] font-bold">800-382-9467</div>
+                        </div>
+                    </div>
+                    <div class="border-[var(--main-2)] border-[5px] flex justify-between w-full rounded-[20px] overflow-clip md:hidden">
+                        <div class="flex flex-col px-[15px] py-[10px] text-center items-center justify-center text-1rem md:text-[24px] text-[var(--main-2)] bg-[var(--main-3)]">
+                            <div class="font-bold">Call Representative Greg Steuerwald</div>
+                            <div>(House District 40)</div>
+                            <div class="font-bold">800-382-9841</div>
+                            <div>or</div>
+                            <div class="font-bold">317-234-3827</div>
+                        </div>
+                        <img src="/assets/img/legislator_gregory_steuerwald.jpg" alt="Greg Steuerwald" class="max-w-[150px] object-cover">
+                    </div>
+                </ul>
+            </div>
+            <!-- Twitter/X Feed Placeholder -->
+            <div class="h-full w-full">
+                <ul class="flex flex-col gap-[30px]">
+                    <div class="border-[var(--main-2)] border-[5px] flex justify-center w-full rounded-[20px] overflow-clip font-black items-center px-[15px] py-[10px] text-[30px]">
+                        Our Twitter/X feed
+                    </div>
+                    <img src="" alt="Twitter API" class="h-full w-full">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Section -->
+    <div class="flex flex-col md:flex-row h-fit bg-[var(--main-4)] w-full px-[20px] py-[10px]">
+        <div class="w-full h-fit md:h-[400px] overflow-clip rounded-t-[20px] md:rounded-tr-[0px] md:rounded-l-[20px] bg-cover bg-center text-center font-bold items-center justify-center text-white text-1rem md:text-[30px] relative py-[10px] px-[10px]" style="background-image: url('/assets/img/Apply for AOA copy.png');">
+            <div class="absolute inset-0 bg-black opacity-75"></div>
+            <div class="relative z-10 flex flex-col justify-center items-center h-full">
+                <h3 class="text-[50px]">Want to be an <a href="#" class="underline text-[var(--main-2)]">Oriole Advocate?</a></h3>
+                <br>
+                We start accepting applications at the beginning of the school year. Please check back here at that time. You can also reach out on our Contact Us page
+            </div>
+        </div>
+        <div class="w-full md:w-[400px] h-fit md:h-[400px] bg-[var(--main-2)] rounded-b-[20px] md:rounded-bl-[0px] md:rounded-r-[20px] flex">
+            <img src="/assets/img/OA Appply Today.png" alt="Apply" class="object-cover rounded-b-[20px] md:rounded-r-[20px] w-full h-full" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-white mt-10">
+        <div class="flex items-center justify-center py-4"></div>
+        <div class="row">
+            <ul class="flex flex-wrap justify-center gap-4 py-2">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="faq.html" class="hover:underline">FAQ</a></li>
+                <li><a href="news.html" class="hover:underline">News</a></li>
+                <li><a href="contacts.html" class="hover:underline">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="row text-center py-2">
+            © 2025 Avon Oriole Advocates - All rights reserved || Designed By:
+            <a href="#" class="underline text-[var(--main-2)]">Gabriel Richter</a> | Avon Highschool
+        </div>
+    </footer>
+
+</body>
+</html>
