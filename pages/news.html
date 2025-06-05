@@ -15,44 +15,43 @@
 <header>
     <div class="h-[80px] bg-[var(--main-3)] flex justify-between items-center px-[20px] md:px-[50px] text-[16px]">
         <div class="flex items-center">
-            <img src="../assets/img/Oriole Advocates logo.-web.jpg" alt="Logo" class="h-12 w-12 mr-2 rounded-full">
+            <img href="../index.html" src="../assets/img/Oriole Advocates logo.-web.jpg" alt="Logo" class="h-12 w-12 mr-2 rounded-full">
             <h1 class="md:text-2xl font-bold text-white">Avon Oriole Advocates</h1>
         </div>
-        <!-- Mobile Menu Button -->
-            <!-- Mobile Menu Button & Dropdown -->
-            <div class="relative md:hidden">
-                <button id="menu-icon" class="w-[58px] h-[58px] rounded-full bg-[var(--main-2)] flex justify-center items-center focus:outline-none">
-                    <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 20px;">
-                        <line x1="1.5" y1="2" x2="13.5" y2="2" stroke="black" stroke-width="3" stroke-linecap="round"></line>
-                        <line x1="1.5" y1="12" x2="28.5" y2="12" stroke="black" stroke-width="3" stroke-linecap="round"></line>
-                        <line x1="16.5" y1="22" x2="28.5" y2="22" stroke="black" stroke-width="3" stroke-linecap="round"></line>
-                    </svg>
-                </button>
-                <div id="mobile-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50 hidden">
-                    <a href="../index.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">Home</a>
-                    <a href="faq.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">FAQ</a>
-                    <a href="news.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">News</a>
-                    <a href="contacts.html" class="block px-4 py-2 text-[var(--main-3)] font-bold underline">Contact Us</a>
-                </div>
+        <!-- Mobile Menu Button & Dropdown -->
+        <div class="relative md:hidden">
+            <button id="menu-icon" class="w-[58px] h-[58px] rounded-full bg-[var(--main-2)] flex justify-center items-center focus:outline-none">
+            <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 20px;">
+            <line x1="1.5" y1="2" x2="13.5" y2="2" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+            <line x1="1.5" y1="12" x2="28.5" y2="12" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+            <line x1="16.5" y1="22" x2="28.5" y2="22" stroke="black" stroke-width="3" stroke-linecap="round"></line>
+            </svg>
+            </button>
+            <div id="mobile-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50 hidden">
+            <a href="../index.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">Home</a>
+            <a href="faq.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">FAQ</a>
+            <a href="news.html" class="block px-4 py-2 text-[var(--main-3)] font-bold underline">News</a>
+            <a href="contacts.html" class="block px-4 py-2 text-black hover:bg-[var(--main-2)] font-bold">Contact Us</a>
             </div>
-            <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuIcon = document.getElementById('menu-icon');
-                const mobileMenu = document.getElementById('mobile-menu');
-                menuIcon.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    mobileMenu.classList.toggle('hidden');
-                });
-                document.addEventListener('click', function (e) {
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                });
-                mobileMenu.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                });
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuIcon.addEventListener('click', function (e) {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
             });
-            </script>
+            document.addEventListener('click', function (e) {
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+            });
+            mobileMenu.addEventListener('click', function (e) {
+            e.stopPropagation();
+            });
+        });
+        </script>
         <!-- Desktop Menu -->
         <nav class="hidden md:flex gap-[30px] items-center mr-4 px-[50px] ">
             <a href="../index.html" class="text-white mx-2 hover:underline"><strong>Home</strong></a>
